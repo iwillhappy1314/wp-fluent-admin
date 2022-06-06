@@ -46,25 +46,25 @@
 #woocommerce-product-data .hndle select {
   margin-left: 0 !important; }
 
-.post-type-product #postbox-container-2 .postbox,
-.post-type-press #postbox-container-2 .postbox,
-.post-type-bunch_services #postbox-container-2 .postbox,
-.post-type-bunch_projects #postbox-container-2 .postbox,
-.post-type-bunch_team #postbox-container-2 .postbox,
-.post-type-bunch_testimonials #postbox-container-2 .postbox,
-.post-type-video #postbox-container-2 .postbox {
+.post-type-product #postbox-container-2 .postbox:not(.hide-if-js),
+.post-type-press #postbox-container-2 .postbox:not(.hide-if-js),
+.post-type-bunch_services #postbox-container-2 .postbox:not(.hide-if-js),
+.post-type-bunch_projects #postbox-container-2 .postbox:not(.hide-if-js),
+.post-type-bunch_team #postbox-container-2 .postbox:not(.hide-if-js),
+.post-type-bunch_testimonials #postbox-container-2 .postbox:not(.hide-if-js),
+.post-type-video #postbox-container-2 .postbox:not(.hide-if-js) {
   border: 0;
   box-shadow: none;
   background: transparent;
   display: flex;
   align-items: flex-start; }
-  .post-type-product #postbox-container-2 .postbox + .postbox,
-  .post-type-press #postbox-container-2 .postbox + .postbox,
-  .post-type-bunch_services #postbox-container-2 .postbox + .postbox,
-  .post-type-bunch_projects #postbox-container-2 .postbox + .postbox,
-  .post-type-bunch_team #postbox-container-2 .postbox + .postbox,
-  .post-type-bunch_testimonials #postbox-container-2 .postbox + .postbox,
-  .post-type-video #postbox-container-2 .postbox + .postbox {
+  .post-type-product #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
+  .post-type-press #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
+  .post-type-bunch_services #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
+  .post-type-bunch_projects #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
+  .post-type-bunch_team #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
+  .post-type-bunch_testimonials #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
+  .post-type-video #postbox-container-2 .postbox:not(.hide-if-js) + .postbox {
     border-top: 1px solid #ddd;
     padding-top: 12px; }
 .post-type-product #postbox-container-2 .postbox-header,
@@ -111,6 +111,14 @@
   .post-type-bunch_testimonials #postbox-container-2 .inside p:first-child,
   .post-type-video #postbox-container-2 .inside p:first-child {
     margin-top: 8px; }
+.post-type-product #postbox-container-2 #minor-publishing-actions,
+.post-type-press #postbox-container-2 #minor-publishing-actions,
+.post-type-bunch_services #postbox-container-2 #minor-publishing-actions,
+.post-type-bunch_projects #postbox-container-2 #minor-publishing-actions,
+.post-type-bunch_team #postbox-container-2 #minor-publishing-actions,
+.post-type-bunch_testimonials #postbox-container-2 #minor-publishing-actions,
+.post-type-video #postbox-container-2 #minor-publishing-actions {
+  padding-left: 0; }
 .post-type-product #postbox-container-2 #preview-action,
 .post-type-press #postbox-container-2 #preview-action,
 .post-type-bunch_services #postbox-container-2 #preview-action,
@@ -169,16 +177,28 @@
 .post-type-bunch_testimonials #postbox-container-2 #major-publishing-actions,
 .post-type-video #postbox-container-2 #major-publishing-actions {
   background: transparent;
-  border: 0; }
-.post-type-product #postbox-container-2 #publishing-action .button-primary,
-.post-type-press #postbox-container-2 #publishing-action .button-primary,
-.post-type-bunch_services #postbox-container-2 #publishing-action .button-primary,
-.post-type-bunch_projects #postbox-container-2 #publishing-action .button-primary,
-.post-type-bunch_team #postbox-container-2 #publishing-action .button-primary,
-.post-type-bunch_testimonials #postbox-container-2 #publishing-action .button-primary,
-.post-type-video #postbox-container-2 #publishing-action .button-primary {
-  position: absolute;
-  left: 0; }
+  border: 0;
+  padding: 0; }
+.post-type-product #postbox-container-2 #publishing-action,
+.post-type-press #postbox-container-2 #publishing-action,
+.post-type-bunch_services #postbox-container-2 #publishing-action,
+.post-type-bunch_projects #postbox-container-2 #publishing-action,
+.post-type-bunch_team #postbox-container-2 #publishing-action,
+.post-type-bunch_testimonials #postbox-container-2 #publishing-action,
+.post-type-video #postbox-container-2 #publishing-action {
+  height: 52px;
+  position: relative;
+  float: none; }
+  .post-type-product #postbox-container-2 #publishing-action .button-primary,
+  .post-type-press #postbox-container-2 #publishing-action .button-primary,
+  .post-type-bunch_services #postbox-container-2 #publishing-action .button-primary,
+  .post-type-bunch_projects #postbox-container-2 #publishing-action .button-primary,
+  .post-type-bunch_team #postbox-container-2 #publishing-action .button-primary,
+  .post-type-bunch_testimonials #postbox-container-2 #publishing-action .button-primary,
+  .post-type-video #postbox-container-2 #publishing-action .button-primary {
+    position: absolute;
+    left: 0;
+    top: 12px; }
 .post-type-product #postbox-container-2 #delete-action,
 .post-type-press #postbox-container-2 #delete-action,
 .post-type-bunch_services #postbox-container-2 #delete-action,
@@ -187,17 +207,6 @@
 .post-type-bunch_testimonials #postbox-container-2 #delete-action,
 .post-type-video #postbox-container-2 #delete-action {
   margin-left: 216px; }
-.post-type-product #postbox-container-2 #advanced-sortables,
-.post-type-press #postbox-container-2 #advanced-sortables,
-.post-type-bunch_services #postbox-container-2 #advanced-sortables,
-.post-type-bunch_projects #postbox-container-2 #advanced-sortables,
-.post-type-bunch_team #postbox-container-2 #advanced-sortables,
-.post-type-bunch_testimonials #postbox-container-2 #advanced-sortables,
-.post-type-video #postbox-container-2 #advanced-sortables {
-  background: #fff;
-  border: 1px solid #c3c4c7;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-  padding: 24px 28px 1px; }
 .post-type-product #postbox-container-2 .misc-pub-section,
 .post-type-press #postbox-container-2 .misc-pub-section,
 .post-type-bunch_services #postbox-container-2 .misc-pub-section,
