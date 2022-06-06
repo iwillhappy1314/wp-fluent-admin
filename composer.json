@@ -1,0 +1,28 @@
+{
+  "name": "wenprise/bb",
+  "description": "Plugin developed by wenprise",
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "WpFluentAdmin\\": "src/"
+    }
+  },
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Amos Lee",
+      "email": "iwillhappy1314@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  }
+}
