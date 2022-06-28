@@ -33,7 +33,7 @@ class Options
         $sections = [
             [
                 'id'    => 'fluent_admin_options',
-                'title' => __('Fluent Admin Options', 'wedevs'),
+                'title' => __('Fluent Admin Options', 'wp-fluent-admin'),
             ],
         ];
 
@@ -49,23 +49,23 @@ class Options
     {
 
         $post_types          = get_post_types(['_builtin' => false,], OBJECT);
-        $build_in_post_types = get_post_types(['_builtin' => true,], OBJECT);
+        $build_in_post_types = [
+            'post' => __('Enable for post type', 'wp-fluent-admin'),
+        ];
 
         $post_types = wp_list_pluck(array_merge($post_types, $build_in_post_types), 'label', 'name');
 
-        $settings_fields = [
+        return [
             'fluent_admin_options' => [
                 [
                     'name'    => 'post_types_support',
-                    'label'   => __('Enable for post type', 'wedevs'),
+                    'label'   => __('Enable for post type', 'wp-fluent-admin'),
                     'type'    => 'multicheck',
                     'default' => ['one' => 'one', 'four' => 'four'],
                     'options' => $post_types,
                 ],
             ],
         ];
-
-        return $settings_fields;
     }
 
     function admin_menu()

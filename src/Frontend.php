@@ -15,7 +15,6 @@ class Frontend
     {
         global $pagenow;
 
-
         // 判断是否为可变商品
         if ($pagenow === 'post.php' || $pagenow === 'post-new.php') {
             wp_enqueue_style('fluent-admin-main', WP_FLUENT_ADMIN_URL . 'source/styles/main.css', [], WP_FLUENT_ADMIN_VERSION, 'screen');
