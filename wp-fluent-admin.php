@@ -36,27 +36,26 @@ if ( ! is_file(WP_FLUENT_ADMIN_PATH . 'vendor/autoload.php')) {
 }
 
 
-register_activation_hook(WP_FLUENT_ADMIN_MAIN_FILE, '_b_activation');
-register_deactivation_hook(WP_FLUENT_ADMIN_MAIN_FILE, '_b_deactivation');
-register_uninstall_hook(WP_FLUENT_ADMIN_MAIN_FILE, '_b_uninstallation_action_action');
+register_activation_hook(WP_FLUENT_ADMIN_MAIN_FILE, 'wp_fluent_admin_activation');
+register_deactivation_hook(WP_FLUENT_ADMIN_MAIN_FILE, 'wp_fluent_admin_deactivation');
+register_uninstall_hook(WP_FLUENT_ADMIN_MAIN_FILE, 'wp_fluent_admin_uninstallation_action_action');
 
-function _b_activation()
+function wp_fluent_admin_activation()
 {
     new WpFluentAdmin\Actions\ActivationAction();
 }
 
 
-function _b_deactivation()
+function wp_fluent_admin_deactivation()
 {
     new WpFluentAdmin\Actions\DeactivationAction();
 }
 
 
-function _b_uninstallation_action_action()
+function wp_fluent_admin_uninstallation_action_action()
 {
     new WpFluentAdmin\Actions\DeactivationAction();
 }
-
 
 add_action('plugins_loaded', function ()
 {

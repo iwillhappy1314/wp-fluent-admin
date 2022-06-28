@@ -1,0 +1,57 @@
+{
+    "packages": [
+        {
+            "name": "wenprise/wordpress-settings-api",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iwillhappy1314/wordpress-settings-api.git",
+                "reference": "63c42da75fe71ca24123bf2384e7c07cf569c170"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iwillhappy1314/wordpress-settings-api/zipball/63c42da75fe71ca24123bf2384e7c07cf569c170",
+                "reference": "63c42da75fe71ca24123bf2384e7c07cf569c170",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "time": "2022-06-28T03:15:35+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Wenprise\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tareq Hasan",
+                    "email": "tareq@wedevs.com",
+                    "homepage": "http://tareq.wedevs.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "WordPress settings API Abstraction Class",
+            "homepage": "https://github.com/tareq1988/wordpress-settings-api-class",
+            "keywords": [
+                "settings-api",
+                "wordpress",
+                "wp"
+            ],
+            "support": {
+                "source": "https://github.com/iwillhappy1314/wordpress-settings-api/tree/master"
+            },
+            "install-path": "../wenprise/wordpress-settings-api"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

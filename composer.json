@@ -3,9 +3,8 @@
   "description": "Plugin developed by wenprise",
   "require": {
     "php": ">=7.1",
-    "ext-json": "*"
-  },
-  "require-dev": {
+    "ext-json": "*",
+    "wenprise/wordpress-settings-api": "dev-master"
   },
   "autoload": {
     "psr-4": {
@@ -19,7 +18,7 @@
       "email": "iwillhappy1314@gmail.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "config": {
     "preferred-install": {
       "*": "dist"

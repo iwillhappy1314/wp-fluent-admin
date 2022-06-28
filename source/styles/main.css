@@ -42,186 +42,65 @@
   flex-direction: row-reverse;
   justify-content: start;
   margin: 8px 0; }
-
 #woocommerce-product-data .hndle select {
   margin-left: 0 !important; }
 
-.post-type-product #postbox-container-2 .postbox:not(.hide-if-js),
-.post-type-press #postbox-container-2 .postbox:not(.hide-if-js),
-.post-type-bunch_services #postbox-container-2 .postbox:not(.hide-if-js),
-.post-type-bunch_projects #postbox-container-2 .postbox:not(.hide-if-js),
-.post-type-bunch_team #postbox-container-2 .postbox:not(.hide-if-js),
-.post-type-bunch_testimonials #postbox-container-2 .postbox:not(.hide-if-js),
-.post-type-video #postbox-container-2 .postbox:not(.hide-if-js) {
+.wp-fluent-admin #postbox-container-2 .postbox:not(.hide-if-js) {
   border: 0;
   box-shadow: none;
   background: transparent;
   display: flex;
   align-items: flex-start; }
-  .post-type-product #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
-  .post-type-press #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
-  .post-type-bunch_services #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
-  .post-type-bunch_projects #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
-  .post-type-bunch_team #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
-  .post-type-bunch_testimonials #postbox-container-2 .postbox:not(.hide-if-js) + .postbox,
-  .post-type-video #postbox-container-2 .postbox:not(.hide-if-js) + .postbox {
+  .wp-fluent-admin #postbox-container-2 .postbox:not(.hide-if-js) + .postbox {
     border-top: 1px solid #ddd;
     padding-top: 12px; }
-.post-type-product #postbox-container-2 .postbox-header,
-.post-type-press #postbox-container-2 .postbox-header,
-.post-type-bunch_services #postbox-container-2 .postbox-header,
-.post-type-bunch_projects #postbox-container-2 .postbox-header,
-.post-type-bunch_team #postbox-container-2 .postbox-header,
-.post-type-bunch_testimonials #postbox-container-2 .postbox-header,
-.post-type-video #postbox-container-2 .postbox-header {
+.wp-fluent-admin #postbox-container-2 .postbox-header {
   border: 0;
   padding-top: 8px;
   width: 260px;
   flex-shrink: 0; }
-.post-type-product #postbox-container-2 .hndle,
-.post-type-press #postbox-container-2 .hndle,
-.post-type-bunch_services #postbox-container-2 .hndle,
-.post-type-bunch_projects #postbox-container-2 .hndle,
-.post-type-bunch_team #postbox-container-2 .hndle,
-.post-type-bunch_testimonials #postbox-container-2 .hndle,
-.post-type-video #postbox-container-2 .hndle {
+.wp-fluent-admin #postbox-container-2 .hndle {
   padding: 0; }
-.post-type-product #postbox-container-2 .handle-actions,
-.post-type-press #postbox-container-2 .handle-actions,
-.post-type-bunch_services #postbox-container-2 .handle-actions,
-.post-type-bunch_projects #postbox-container-2 .handle-actions,
-.post-type-bunch_team #postbox-container-2 .handle-actions,
-.post-type-bunch_testimonials #postbox-container-2 .handle-actions,
-.post-type-video #postbox-container-2 .handle-actions {
+.wp-fluent-admin #postbox-container-2 .handle-actions {
   display: none; }
-.post-type-product #postbox-container-2 .inside,
-.post-type-press #postbox-container-2 .inside,
-.post-type-bunch_services #postbox-container-2 .inside,
-.post-type-bunch_projects #postbox-container-2 .inside,
-.post-type-bunch_team #postbox-container-2 .inside,
-.post-type-bunch_testimonials #postbox-container-2 .inside,
-.post-type-video #postbox-container-2 .inside {
+.wp-fluent-admin #postbox-container-2 .inside {
   padding: 0;
   flex-grow: 1; }
-  .post-type-product #postbox-container-2 .inside p:first-child,
-  .post-type-press #postbox-container-2 .inside p:first-child,
-  .post-type-bunch_services #postbox-container-2 .inside p:first-child,
-  .post-type-bunch_projects #postbox-container-2 .inside p:first-child,
-  .post-type-bunch_team #postbox-container-2 .inside p:first-child,
-  .post-type-bunch_testimonials #postbox-container-2 .inside p:first-child,
-  .post-type-video #postbox-container-2 .inside p:first-child {
+  .wp-fluent-admin #postbox-container-2 .inside p:first-child {
     margin-top: 8px; }
-.post-type-product #postbox-container-2 #minor-publishing-actions,
-.post-type-press #postbox-container-2 #minor-publishing-actions,
-.post-type-bunch_services #postbox-container-2 #minor-publishing-actions,
-.post-type-bunch_projects #postbox-container-2 #minor-publishing-actions,
-.post-type-bunch_team #postbox-container-2 #minor-publishing-actions,
-.post-type-bunch_testimonials #postbox-container-2 #minor-publishing-actions,
-.post-type-video #postbox-container-2 #minor-publishing-actions {
+.wp-fluent-admin #postbox-container-2 #minor-publishing-actions {
   padding-left: 0; }
-.post-type-product #postbox-container-2 #preview-action,
-.post-type-press #postbox-container-2 #preview-action,
-.post-type-bunch_services #postbox-container-2 #preview-action,
-.post-type-bunch_projects #postbox-container-2 #preview-action,
-.post-type-bunch_team #postbox-container-2 #preview-action,
-.post-type-bunch_testimonials #postbox-container-2 #preview-action,
-.post-type-video #postbox-container-2 #preview-action {
+.wp-fluent-admin #postbox-container-2 #preview-action {
   position: absolute;
   bottom: 9px;
   left: 84px; }
-.post-type-product #postbox-container-2 .csf-metabox,
-.post-type-press #postbox-container-2 .csf-metabox,
-.post-type-bunch_services #postbox-container-2 .csf-metabox,
-.post-type-bunch_projects #postbox-container-2 .csf-metabox,
-.post-type-bunch_team #postbox-container-2 .csf-metabox,
-.post-type-bunch_testimonials #postbox-container-2 .csf-metabox,
-.post-type-video #postbox-container-2 .csf-metabox {
+.wp-fluent-admin #postbox-container-2 .csf-metabox {
   margin: 0; }
-  .post-type-product #postbox-container-2 .csf-metabox .csf-field,
-  .post-type-press #postbox-container-2 .csf-metabox .csf-field,
-  .post-type-bunch_services #postbox-container-2 .csf-metabox .csf-field,
-  .post-type-bunch_projects #postbox-container-2 .csf-metabox .csf-field,
-  .post-type-bunch_team #postbox-container-2 .csf-metabox .csf-field,
-  .post-type-bunch_testimonials #postbox-container-2 .csf-metabox .csf-field,
-  .post-type-video #postbox-container-2 .csf-metabox .csf-field {
+  .wp-fluent-admin #postbox-container-2 .csf-metabox .csf-field {
     padding: 0; }
-    .post-type-product #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-product #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-press #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-press #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_services #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-bunch_services #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_projects #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-bunch_projects #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_team #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-bunch_team #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_testimonials #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-bunch_testimonials #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-video #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
-    .post-type-video #postbox-container-2 .csf-metabox .csf-field .csf-title {
+    .wp-fluent-admin #postbox-container-2 .csf-metabox .csf-field .csf-fieldset,
+    .wp-fluent-admin #postbox-container-2 .csf-metabox .csf-field .csf-title {
       width: 100%;
       float: none; }
-    .post-type-product #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-press #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_services #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_projects #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_team #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-bunch_testimonials #postbox-container-2 .csf-metabox .csf-field .csf-title,
-    .post-type-video #postbox-container-2 .csf-metabox .csf-field .csf-title {
+    .wp-fluent-admin #postbox-container-2 .csf-metabox .csf-field .csf-title {
       margin-bottom: 8px; }
-.post-type-product #postbox-container-2 #major-publishing-actions,
-.post-type-press #postbox-container-2 #major-publishing-actions,
-.post-type-bunch_services #postbox-container-2 #major-publishing-actions,
-.post-type-bunch_projects #postbox-container-2 #major-publishing-actions,
-.post-type-bunch_team #postbox-container-2 #major-publishing-actions,
-.post-type-bunch_testimonials #postbox-container-2 #major-publishing-actions,
-.post-type-video #postbox-container-2 #major-publishing-actions {
+.wp-fluent-admin #postbox-container-2 #major-publishing-actions {
   background: transparent;
   border: 0;
   padding: 0; }
-.post-type-product #postbox-container-2 #publishing-action,
-.post-type-press #postbox-container-2 #publishing-action,
-.post-type-bunch_services #postbox-container-2 #publishing-action,
-.post-type-bunch_projects #postbox-container-2 #publishing-action,
-.post-type-bunch_team #postbox-container-2 #publishing-action,
-.post-type-bunch_testimonials #postbox-container-2 #publishing-action,
-.post-type-video #postbox-container-2 #publishing-action {
+.wp-fluent-admin #postbox-container-2 #publishing-action {
   height: 52px;
   position: relative;
   float: none; }
-  .post-type-product #postbox-container-2 #publishing-action .button-primary,
-  .post-type-press #postbox-container-2 #publishing-action .button-primary,
-  .post-type-bunch_services #postbox-container-2 #publishing-action .button-primary,
-  .post-type-bunch_projects #postbox-container-2 #publishing-action .button-primary,
-  .post-type-bunch_team #postbox-container-2 #publishing-action .button-primary,
-  .post-type-bunch_testimonials #postbox-container-2 #publishing-action .button-primary,
-  .post-type-video #postbox-container-2 #publishing-action .button-primary {
+  .wp-fluent-admin #postbox-container-2 #publishing-action .button-primary {
     position: absolute;
     left: 0;
     top: 12px; }
-.post-type-product #postbox-container-2 #delete-action,
-.post-type-press #postbox-container-2 #delete-action,
-.post-type-bunch_services #postbox-container-2 #delete-action,
-.post-type-bunch_projects #postbox-container-2 #delete-action,
-.post-type-bunch_team #postbox-container-2 #delete-action,
-.post-type-bunch_testimonials #postbox-container-2 #delete-action,
-.post-type-video #postbox-container-2 #delete-action {
+.wp-fluent-admin #postbox-container-2 #delete-action {
   margin-left: 216px; }
-.post-type-product #postbox-container-2 .misc-pub-section,
-.post-type-press #postbox-container-2 .misc-pub-section,
-.post-type-bunch_services #postbox-container-2 .misc-pub-section,
-.post-type-bunch_projects #postbox-container-2 .misc-pub-section,
-.post-type-bunch_team #postbox-container-2 .misc-pub-section,
-.post-type-bunch_testimonials #postbox-container-2 .misc-pub-section,
-.post-type-video #postbox-container-2 .misc-pub-section {
+.wp-fluent-admin #postbox-container-2 .misc-pub-section {
   padding: 6px 0 8px; }
-.post-type-product #postbox-container-2 .closed .inside,
-.post-type-press #postbox-container-2 .closed .inside,
-.post-type-bunch_services #postbox-container-2 .closed .inside,
-.post-type-bunch_projects #postbox-container-2 .closed .inside,
-.post-type-bunch_team #postbox-container-2 .closed .inside,
-.post-type-bunch_testimonials #postbox-container-2 .closed .inside,
-.post-type-video #postbox-container-2 .closed .inside {
+.wp-fluent-admin #postbox-container-2 .closed .inside {
   display: block !important; }
 
 /*# sourceMappingURL=main.css.map */

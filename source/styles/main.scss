@@ -57,25 +57,23 @@
   }
 }
 
-#woocommerce-product-data .hndle label{
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  justify-content: start;
-  margin: 8px 0;
+#woocommerce-product-data{
+  .hndle{
+    label {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: start;
+      margin: 8px 0;
+    }
+
+    select {
+      margin-left: 0 !important;
+    }
+  }
 }
 
-#woocommerce-product-data .hndle select{
-  margin-left: 0 !important;
-}
-
-.post-type-product,
-.post-type-press,
-.post-type-bunch_services,
-.post-type-bunch_projects,
-.post-type-bunch_team,
-.post-type-bunch_testimonials,
-.post-type-video {
+.wp-fluent-admin {
   #postbox-container-2 {
     .postbox:not(.hide-if-js) {
       border: 0;
@@ -128,7 +126,7 @@
     //    display: none;
     //}
 
-    #minor-publishing-actions{
+    #minor-publishing-actions {
       padding-left: 0;
     }
 
@@ -172,6 +170,7 @@
       height: 52px;
       position: relative;
       float: none;
+
       .button-primary {
         position: absolute;
         left: 0;
