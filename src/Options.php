@@ -50,10 +50,11 @@ class Options
 
         $post_types          = get_post_types(['_builtin' => false,], OBJECT);
         $build_in_post_types = [
-            'post' => __('Enable for post type', 'wp-fluent-admin'),
+            'post' => __('Post', 'wp-fluent-admin'),
+            'page' => __('Page', 'wp-fluent-admin'),
         ];
 
-        $post_types = wp_list_pluck(array_merge($post_types, $build_in_post_types), 'label', 'name');
+        $post_types = wp_list_pluck($post_types, 'label', 'name');
 
         return [
             'fluent_admin_options' => [
@@ -62,7 +63,7 @@ class Options
                     'label'   => __('Enable for post type', 'wp-fluent-admin'),
                     'type'    => 'multicheck',
                     'default' => ['one' => 'one', 'four' => 'four'],
-                    'options' => $post_types,
+                    'options' => $build_in_post_types + $post_types,
                 ],
             ],
         ];
